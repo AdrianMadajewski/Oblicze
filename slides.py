@@ -16,7 +16,7 @@ class Intro(Slide):
 
         oblicze = MathTex(r"\mathbb{K}\text{onferencja } \theta \beta \ell \imath c \mathbb{Z}\varepsilon")
 
-        logo = ImageMobject("uam_logo.png")
+        logo = ImageMobject("assets/uam_logo.png")
         logo.scale(0.2)
         logo.next_to(title, DOWN)
         oblicze.next_to(logo, DOWN)
@@ -575,7 +575,7 @@ class Scene_10(Slide):
 
         # Create modified fact with changed wording
         uwaga =  Tex(r"""
-            Założenie o ciągłości pochodnej symetrycznej jest istotne.
+            Założenie o ciągłości pochodnej symetrycznej \\ funkcji $g$ w punkcie $f(x)$ jest istotne.
         """, tex_environment="flushleft").scale(0.8)
         
         uwaga_box = SurroundingRectangle(uwaga, color = RED, buff=0.5, corner_radius=0.2)
