@@ -8,11 +8,6 @@ template.add_to_preamble(r"\usepackage[utf8]{inputenc}")
 template.add_to_preamble(r"\PassOptionsToPackage{polish}{babel}")
 Tex.set_default(tex_template = template)
 
-from manim import config as global_config
-config = global_config.copy()
-
-
-
 class Intro(Slide):
     def construct(self):
         title = Tex(
@@ -388,9 +383,9 @@ class Scene_7(Slide):
         eq_lewa_4 = MathTex(r"f'_+(0) = \lim_{h \to 0^+}\frac{1}{1 + e^{\frac{1}{h}}}")
         eq_lewa_5 = MathTex(r"f'_+(0) = 0")
 
-        eq_prawa_1 = MathTex(r"f'_+(0) = \lim_{h \to 0^-}\frac{f(0+h) - f(0)}{h}")
-        eq_prawa_2 = MathTex(r"f'_+(0) = \lim_{h \to 0^-}\frac{1}{1 + e^{\frac{1}{h}}}")
-        eq_prawa_3 = MathTex(r"f'_+(0) = 1")
+        eq_prawa_1 = MathTex(r"f'_-(0) = \lim_{h \to 0^-}\frac{f(0+h) - f(0)}{h}")
+        eq_prawa_2 = MathTex(r"f'_-(0) = \lim_{h \to 0^-}\frac{1}{1 + e^{\frac{1}{h}}}")
+        eq_prawa_3 = MathTex(r"f'_-(0) = 1")
 
         self.play(Write(eq_lewa_1))
         self.next_slide()
