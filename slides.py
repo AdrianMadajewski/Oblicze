@@ -16,7 +16,7 @@ class Intro(Slide):
 
         oblicze = MathTex(r"\mathbb{K}\text{onferencja } \theta \beta \ell \imath c \mathbb{Z}\varepsilon")
 
-        logo = ImageMobject("assets/uam_logo.png")
+        logo = ImageMobject("uam_logo.png")
         logo.scale(0.2)
         logo.next_to(title, DOWN)
         oblicze.next_to(logo, DOWN)
