@@ -19,7 +19,7 @@ concurrency:
 env:
   FILE: 'slides.py'  # Source file where scenes are defined
   MANIM: 'manim'  # manim or manimgl - which Manim renderer to use
-  SCENES: 'Introduction WithTeX Outro'  # Space-separated list of scenes to render
+  SCENES: 'Intro,Zastosowania,Scene_1, Scene_2, Scene_3, Scene_4, Scene_5, Scene_6, Scene_7, Scene_8, Scene_9, Scene_10, Scene_11, Scene_12, Scene_13, Scene_14, Scene_15, Scene_16, Scene_17, Scene_18, Scene_19, Scene_20,Literature'  # Space-separated list of scenes to render
   USES_TEX: true  # true or false - disabling this will make the action run faster
   DISPLAY: :99  # Do not touch this
 
